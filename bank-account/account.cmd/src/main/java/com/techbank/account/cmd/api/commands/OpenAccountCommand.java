@@ -1,0 +1,10 @@
+package com.techbank.account.cmd.api.commands;
+
+import com.techbank.account.common.dto.AccountType;
+import com.techbank.cqrs.core.commands.BaseCommand;
+
+public class OpenAccountCommand extends BaseCommand {
+    private String accountHolder;
+    private AccountType accountType;
+    private double openingBalance;
+}
